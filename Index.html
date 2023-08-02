@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Iphone 14 Pro Max Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<section>
+    <div class="circle"></div>
+ <header>
+    <a href="#" class="logo"><img src="logo1.png" width="75px" height="75px"></a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Whats new</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+ </header>   
+ <div class="content">
+    <div class="textbox">
+    <h2>It's not just any Phone </br>
+    It's<span> Iphone</span> </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui temporibus consequatur optio laboriosam dicta earum sit at aliquam repellat, eum vero facere odio necessitatibus commodi laborum non velit. Labore, harum.
+    </p>
+        <a href="#">Learn More</a> 
+    
+ </div>
+ <div class="imgbox"> 
+    <img src="img1.png" class="Iphone">
+
+ </div>
+</div>
+<ul class="thumb">
+    <li><img src="thumb1.png" onclick="imgSlider('img4.png');changeCircleColor('#000000');changeTextColor('#000000')"></li>
+    <li><img src="thumb2.png" onclick="imgSlider('img1.png');changeCircleColor('#FFEA19');changeTextColor('#FFEA19')"></li>
+    <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#808080');changeTextColor('#808080')"></li>
+    <li><img src="thumb4.png" onclick="imgSlider('img2.png');changeCircleColor('#BC13FE');changeTextColor('#gBC13FE')"></li>
+</ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+    document.querySelector('.iphone').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color
+    }
+    function changeTextColor(color){
+        const Text = document.querySelector('.content .textbox h2 span');
+        Text.style.color = color
+    }
+</script>
+
+    </body>
+</html>
